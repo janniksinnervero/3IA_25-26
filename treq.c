@@ -22,7 +22,7 @@ int main (){
     for (int cnt_l=0; cnt_l<l; cnt_l++) {
         printf("%c", c);
 
-        for(int cnt_c; cnt_c<cnt_l; cnt_c++){
+        for(int cnt_c=0; cnt_c<cnt_l; cnt_c++){
             printf("%c", c);
         }
     printf("\n");
