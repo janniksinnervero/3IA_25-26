@@ -5,7 +5,9 @@
 int main (void) {
     const int n_facce = 6;
 
-      srand(time(NULL));
+    
+    
+    srand(time(NULL));
 
     int n;
     int c=0;
