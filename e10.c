@@ -8,7 +8,7 @@ Utilizzo della forma iterativa do-while.
 #include <stdio.h>
 int main (void) {
 
-    int scelta=0;
+    int scelta=1;
     int num=0;
     int div=0;
     int cnt=0;
@@ -19,18 +19,18 @@ int main (void) {
     printf("3 -> verifica numero perfetto\n");
     printf("0 -> terimina programma\n");
 
-    printf("Scegli un' opzione: ");
-    scanf("%d", &scelta);
-
     while(scelta!=0){
+
+        printf("\nScegli un' opzione: ");
+        scanf("%d", &scelta);
 
         switch(scelta) {
 
             case 1:{
-                printf("Inserisci un numero intero positivo: ");
+                printf("\nInserisci un numero intero positivo: ");
                 scanf("%d", &num);
-                while (num%1==0 || num<0){
-                    printf("Valore non valido. Riprova: ");
+                while (num%1==0 && num<0){
+                    printf("\nValore non valido. Riprova: ");
                     scanf("%d", &num);
                 }
                 printf("\nDivisori di %d: ", num);
@@ -42,45 +42,63 @@ int main (void) {
 
                 }
                 
+                printf("\n");
+                
             }
+
+            break;
         
             case 2:{
-                printf("Inserisci un valore intero positivo: ");
+                printf("\nInserisci un valore intero positivo: ");
                 scanf("%d", &num);
-                while (num%1==0 || num<0){
-                    printf("Valore non valido. Riprova: ");
+                while (num%1==0 && num<0){
+                    printf("\nValore non valido. Riprova: ");
                     scanf("%d", &num);
                 }
-                while (num>div) {
+                while (num>=div) {
                     div=div+1;
                     if(num%div==0){
                         cnt=cnt+1;
                     }
                 }
                 if(cnt==2){
-                    printf("Il numero è primo");
+                    printf("\nIl numero è primo");
                 }
                 else {
-                    printf("Il numero non è primo");
+                    printf("\nIl numero non è primo");
                 }
             }
 
+            break;
+
             case 3:{
-
-
+                printf("\nInserisci un valore intero positivo: ");
+                scanf("%d", &num);
+                while (num%1==0 && num<0){
+                    printf("\nValore non valido. Riprova: ");
+                    scanf("%d", &num);
+                }
+                while (num>=div){
+                    div=div+1;
+                    if (num%div==0){
+                        cnt=cnt+div;
+                    }
+                }
+                if(cnt==num){
+                    printf("\nIl numero è perfetto.");
+                }
+                else{
+                    printf("\nIl numero non è perfetto.");
+                }
             }
 
+            break;
 
-
-
-
-
-
+            default:
         }
-
-
-
-
     }
-    }
+
+    printf("\nProgramma terminato.");
+    return 0;
+}
 
