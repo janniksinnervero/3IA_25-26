@@ -14,10 +14,14 @@ int main (void) {
     int cnt=0;
 
     printf("MENU\n");
-    printf("1 -> visualizza i divisori\n");
-    printf("2 -> verifica numero primo\n");
-    printf("3 -> verifica numero perfetto\n");
-    printf("0 -> terimina programma\n");
+    printf("1 -> Visualizza i divisori\n");
+    printf("2 -> Verifica numero primo\n");
+    printf("3 -> Verifica numero perfetto\n");
+    printf("0 -> Terimina programma\n");
+    printf("4 -> Genera N numeri casuali <1000\n");
+    printf("5 -> Genera n numeri dispari <1000\n");
+    printf("6 -> Genera n numeri casuali crescenti <9999\n");
+    printf("7 -> Genera un numero casuale, determina il successivo numero primo\n");
 
     while(scelta!=0){
 
