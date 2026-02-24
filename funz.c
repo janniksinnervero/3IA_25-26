@@ -15,7 +15,7 @@ bool ver_primo(int _n);
  * @param int number to test
  * @return boolean true/false
  */
-bool ver_perf(int _n);
+bool ver_perf(int num);
 
 
 
@@ -33,7 +33,6 @@ int main (void){
 
         case 1: {
             ver_primo;
-
         }
     }
 
@@ -65,20 +64,19 @@ bool ver_primo(int _n){
     }   
 }
 
-bool ver_perf(int _n){
+bool ver_perf(int num){
     int div=1;
     int sum=0;
-    int _n=0;
 
     printf("Inserisci un valore intero: ");
-    scanf("%d", &_n)
+    scanf("%d", &num);
 
-    for(div=1; div<=_n; div++){
-        if (_n%div==0){
-            sum=sum+div
+    for(div=1; div<=num; div++){
+        if (num%div==0){
+            sum=sum+div;
         }
 
-        if(sum==_n){
+        if(sum==num){
             return(true);
         }
         else{
