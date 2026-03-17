@@ -15,21 +15,36 @@ bool ternaPit (int a, int b, int c){
     }
 }
 
-bool numPerf(int num){
+bool ver_perf(int a){
     int div=1;
     int sum=0;
 
-    while (div<num){
-        if(num%div==0){
+    while (div<a){
+        if(a%div==0){
             sum=sum+div;
         }
         div++;
     }
 
-    if(num==sum){
+    if(a==sum){
         return true;
     }
 
+    else{
+        return false;
+    }
+}
+
+bool ver_primo (int a){
+    while(div<a){
+        div++
+        if(a%div==0){
+            cnt++
+        }
+    }
+    if(cnt==2){
+        return true;
+    }
     else{
         return false;
     }

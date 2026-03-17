@@ -10,8 +10,10 @@ int main(void){
     int b2=0;
     int c2=0;
 
-    int num=0;
+    int opz=0;
 
+    printf("1---> TERNA PITAGORICA\n 2---> NUMERO PERFETTO\n 3---> NUMERO PRIMO\n");
+    //
     printf("Inserisci A: ");
     scanf("%d", &a);
 
@@ -30,14 +32,14 @@ int main(void){
     else {
         printf("\nI tre numeri non sono una terna pitagorica");
     }
-
+    //
     printf("\nInserisci un valore intero: ");
     
-    scanf("%d", &num);
+    scanf("%d", &a);
 
-    numPerf(num); 
+    ver_perf(a); 
 
-    if(numPerf(num)){
+    if(ver_perf(a)){
         printf("Il numero è un numero perfetto");
     }
 
@@ -45,4 +47,18 @@ int main(void){
         printf("Il numero non è un numero perfetto");
     }
     return 0;
+
+    //
+    printf("Inserisci un valore: ");
+    scanf("%d", &a);
+
+    ver_primo(a);
+
+    if(ver_primo(a)){
+        printf("Il numero è un numero primo");
+    }
+
+    else{
+        printf("Il numero non è un numero primo");
+    }
 }

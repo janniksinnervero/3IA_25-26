@@ -14,8 +14,11 @@ bool ver_primo(int _n);
  */
 bool ver_perf(int num);
 
-
+/**
+ * Checks whether a numer is  a pythagorean triple or not
+ * @param int number to test
+ * @return boolean true/false
+ */
 bool ternaPit (int a, int b, int c);
 
 
-bool numPerf(int num);
