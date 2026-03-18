@@ -21,4 +21,6 @@ bool ver_perf(int num);
  */
 bool ternaPit (int a, int b, int c);
 
+void viewPrimi (int a, int n_val);
+
 

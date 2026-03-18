@@ -1,6 +1,8 @@
 //contiene codici C delle funzioni della libreria
 #include <stdbool.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 bool ternaPit (int a, int b, int c){
     int a2=a*a;
     int b2=b*b;
@@ -36,10 +38,14 @@ bool ver_perf(int a){
 }
 
 bool ver_primo (int a){
+
+    int div=0; 
+    int cnt=0;
+
     while(div<a){
-        div++
+        div++;
         if(a%div==0){
-            cnt++
+            cnt++;
         }
     }
     if(cnt==2){
@@ -48,4 +54,20 @@ bool ver_primo (int a){
     else{
         return false;
     }
+}
+
+void viewPrimi (int a, int n_val){
+
+     int val=0;
+     int cnt=0;
+     int div=0;
+
+     srand(time(NULL));
+
+     while(cnt!=n_val){
+        val=1+rand()%val;
+        if((val>=1) && (val<=999))
+     }
+
+
 }
