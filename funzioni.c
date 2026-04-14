@@ -8,6 +8,9 @@ int main(void){
     int b=0;
     int c=0;
 
+    int* _a;
+    int* _b;
+
     int n_val=0;
 
     int opz=1;

@@ -23,4 +23,11 @@ bool ternaPit (int a, int b, int c);
 
 void viewPrimi (int a, int n_val);
 
+bool scambio (int* _a, int* _b);
+
+int ndiv (int n1);
+int sumcifre (int n1, int n2);
+int ciframag (int n1, int n2);
+
+
 

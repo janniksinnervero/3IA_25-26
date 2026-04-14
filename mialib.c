@@ -66,8 +66,52 @@ void viewPrimi (int a, int n_val){
 
      while(cnt!=n_val){
         val=1+rand()%val;
-        if((val>=1) && (val<=999))
+        if((val>=1) && (val<=999)){
+            
+        }
      }
 
+     bool scambio (int* _a, int* _b){
+        int tmp=0;
 
+        if(*_a>*_b){
+            tmp=*_a;
+            *_a=*_b;
+            *_b=tmp;
+        }
+     }
+
+}
+
+int ndiv (int n){
+    int cnt=0;
+    int div=0;
+
+    while (n>div){
+        div++;
+        if (n%div==0){
+            cnt++;
+        }
+    }
+
+    return cnt;
+
+}
+
+int ciframag (int n1, int n2){
+    if(n1>n2){
+        return n1;
+    }
+    else {
+        return n2;
+    }
+}
+
+int sumcifre (int n1){
+    int sum=0;
+    int tmp=0;
+    do{
+        tmp=n1/10;
+    }
+    while(tmp>1);
 }
