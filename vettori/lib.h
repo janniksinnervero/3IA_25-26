@@ -37,3 +37,15 @@ rightRotate(): sposta gli elementi di un vettore di una posizione a
  destra, e l'ultimo al posto del primo; es.: { 1, 2, 3, 4 } --> { 4, 1, 2, 3 }
  */
 void rightRotate(int v[], int dim);
+
+//----e05.c---------------------
+
+void prodottoSommeSuccessive(int n1, int n2);
+
+void convertiBase16(float n1);
+
+void areaCerchioQuadrato(int lenght, int c_q);
+
+void sommaCifre (int n1);
+
+//------------------------------

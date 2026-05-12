@@ -58,3 +58,43 @@ void rightRotate(int v[], int dim){
         printf("");
     }
 }
+//-----e05.c------
+void prodottoSommeSuccessive(int n1, int n2){
+    int sum=0;
+    int num=0;
+    int cnt=0;
+
+    while (cnt!=n1){
+        num+=n1;
+        cnt++;
+    }
+
+    sum=num*n2;
+
+    printf("Risultato: %d", sum);
+}
+
+void areaCerchioQuadrato(int lenght, int c_q){
+    float area=0;
+
+    if (c_q==0){
+        area=(lenght/2*lenght/2)*3,14;
+        printf("L' area del cerchio  vale %.2d", area);
+    }
+    else{
+        area=lenght*lenght;
+        printf("L' area del quadrato vale: %.2d", area);
+    }
+}
+
+void sommaCifre (int n1){
+    int cifra=0;
+    int sum=0;
+
+    while(n1>0){
+        cifra=n1%10;
+        n1=n1/10;
+        sum+=cifra;  
+    }
+    printf("La somma di ogni cifra di %d è %d", n1, sum);
+}
